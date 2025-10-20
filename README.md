@@ -1,1 +1,0 @@
-# Tirupati-Yatra-Guide
