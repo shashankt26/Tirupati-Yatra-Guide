@@ -12,8 +12,6 @@
   background-image: url("#");
   background-color:lightblue;
 }
-
-
 	     main{
 			display: flex;
 			flex-direction: column;
@@ -57,10 +55,10 @@
 
 	<div id="main">
 		<h1>Tirumala Yathra Guide</h1>
-             <img src="D:\ram\TT.jpg" alt="TIRUMALA TIRUPATI" width="450" height="300">
+             <img src="SVS.jpg" width="450" height="300">
              <h2><b>TTD</b></h2>
              <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiUioj6LuPVjtsfr10on4L7eaUczRCveLPf5I0F-ydaG9GChdk1pF_-QBFGV5DcYDFh77a8tENMSXgM7Ns2JdYklm-ROMn_KA8aOmFtHV3cyJuK95L-wQZAtJ_oTEcRPkRnOxsI5g9WVNX-fklsR44cSycOO5Gvysyujr-l9AF1W9dmLtsACORxLw6B=w1200-h630-p-k-no-nu" width="137" height="130">
-             <p> TTD means Tirumala Tirupati Devasthanams.TTD is an religious organization.There is a chairman with board members.currently the chairman is Y.V Subbareddy who is the niece of YS Jagan(CM of AP). TTD was established in 1932 as a result of the TTD Act of 1932. According to the act administration of the temple was vested in a committee of seven members and overseen by a paid commissioner appointed by the Madras Government. Advising the committee were two advisory councils – one composed of priests and temple administrators to aid the committee with the operations of the Tirumala temple, and another composed of farmers for advice on Tirumala's land and estate transactions.</p>
+             <p> TTD means Tirumala Tirupati Devasthanams.TTD is an religious organization.There is a chairman with board members.currently the chairman is who is the niece of YS Jagan(CM of AP). TTD was established in 1932 as a result of the TTD Act of 1932. According to the act administration of the temple was vested in a committee of seven members and overseen by a paid commissioner appointed by the Madras Government. Advising the committee were two advisory councils – one composed of priests and temple administrators to aid the committee with the operations of the Tirumala temple, and another composed of farmers for advice on Tirumala's land and estate transactions.</p>
             <h3>Services offered by TTD</h3>
             <p><ol>
                <li>Annaprasadam:The food offerings as "Annaprasadams" are being undertaken by TTD in a massive way in the Matrusri Tarigonda Vengamamba Annaprasadam Complex, donated by Matrsuri Tarigonda Ananta Koti Raju at Tirumala, in all the waiting queue lines and compartments of Vaikuntam Queue Complex I and II, footpath routes etc.In Tirupati and Tiruchanur also the distribution of free food as "Annaprasadam" is being made to not less than 15,000 devotees.</li>
@@ -70,17 +68,16 @@
 		<div id="options">
                   <button id="darshan-btn">Darshan</button>
                   <button id="sevas-btn">Sevas</button>
-			<button id="route-btn">Route</button>
-			<button id="accommodation-btn">Accommodation</button>
-			<button id="places-btn">Places to Visit</button>
+                  <button id="route-btn">Route</button>
+                  <button id="accommodation-btn">Accommodation</button>
+                  <button id="places-btn">Places to Visit</button>
                   <button id="about-btn">About</button>
                   <button id="tips-btn">Tips</button>
                   <button id="contact-btn">Contact</button> 
-                  <audio id="bg-music" src="C:\Users\sudha\Downloads\Namo.mp3"></audio>
                   <button onclick="toggleMusic()">Music</button>
+                  <audio id="bg-music" src="Namo.mp3"></audio>
                   <button onclick="displaySevas()">Srivari Sevalu</button>
-                  <div id="sevas-content"></div>
-                
+                  <div id="sevas-content"></div>                
 		</div>
 
 		<div id="info"></div>
@@ -89,22 +86,23 @@
 	<script>
             var darshanBtn = document.getElementById("darshan-btn");
             var sevasBtn = document.getElementById("sevas-btn");
-		var routeBtn = document.getElementById("route-btn");
-		var accommodationBtn = document.getElementById("accommodation-btn");
-		var placesBtn = document.getElementById("places-btn");
+            var routeBtn = document.getElementById("route-btn");
+            var accommodationBtn = document.getElementById("accommodation-btn");
+            var placesBtn = document.getElementById("places-btn");
             var aboutBtn = document.getElementById("about-btn");
             var tipsBtn = document.getElementById("tips-btn");
             var contactBtn = document.getElementById("contact-btn");
             var audio = document.getElementById('bg-music');
             var isPlaying = false;
+            var div=document.getElementById('sevas-content');
 		var infoDiv = document.getElementById("info"); 
 
             darshanBtn.addEventListener("click", function() {
-  showInfo("Darshan", "darshan.webp", "There are various types of darshan (viewing of the main deity) available such as Sarva Darshan,Special Darshan,VIP Darshan,Time slot tokens It's recommended to book darshan tickets in advance through the official website.", "View directions to darshan entry points", "https://tirumala.org/darshan");
+  showInfo("Darshan", "darshan.webp.jpg", "There are various types of darshan (viewing of the main deity) available such as Sarva Darshan,Special Darshan,VIP Darshan,Time slot tokens It's recommended to book darshan tickets in advance through the official website.", "View directions to darshan entry points", "https://tirumala.org/darshan");
 });
            
              sevasBtn.addEventListener("click", function() {
-  showInfo("Sevas", "sevas.jpeg", "There are several sevas (worship services) available at the temple such as Suprabhatham, Thomala Seva, and Arjitha Brahmotsavam. It's recommended to book seva tickets in advance through the official website.", "View directions to seva venue", "https://tirumala.org/seva-tickets-booking-guidelines");
+  showInfo("Sevas", "sevas.jpg", "There are several sevas (worship services) available at the temple such as Suprabhatham, Thomala Seva, and Arjitha Brahmotsavam. It's recommended to book seva tickets in advance through the official website.", "View directions to seva venue","https://tirumala.org/seva-tickets-booking-guidelines");
 });
 
 		routeBtn.addEventListener("click", function() {
@@ -116,11 +114,11 @@
 });
 
 		placesBtn.addEventListener("click", function() {
-  showInfo("Places to Visit", "places.jpg", "Apart from the main temple, there are several other places to visit in Tirumala such as the Sri Venkateswara Museum, the Swami Pushkarini Lake, and the Akasa Ganga waterfall.", "Explore more on TTD website", "https://tirumala.org/Places-of-Interest");
+  showInfo("Places to Visit", "about.jpg", "Apart from the main temple, there are several other places to visit in Tirumala such as the Sri Venkateswara Museum, the Swami Pushkarini Lake, and the Akasa Ganga waterfall.", "Explore more on TTD website", "https://tirumala.org/Places-of-Interest");
 });
           
             aboutBtn.addEventListener("click", function() {
-			showInfo("about ","about.jpg", "Tirumala is a spiritual town in Tirupati district of the Indian state of Andhra Pradesh. It is one of the suburbs of the Tirupati urban agglomeration. The town is a part of Tirupati Urban Development Authority and located in Tirupati (urban) mandal of Tirupati revenue division.[5] It is a hill town where Tirumala Venkateswara Temple is located, which is the abode of Vishnu. The town is strictly vegetarian.");
+			showInfo("About ","places.jpg", "Tirumala is a spiritual town in Tirupati district of the Indian state of Andhra Pradesh. It is one of the suburbs of the Tirupati urban agglomeration. The town is a part of Tirupati Urban Development Authority and located in Tirupati (urban) mandal of Tirupati revenue division.It is a hill town where Tirumala Venkateswara Temple is located, which is the abode of Vishnu. The town is strictly vegetarian.");
 		});
             tipsBtn.addEventListener("click", function() {
   showTips("Tips for Pilgrims", "tips.jpg", "1. Dress conservatively and avoid revealing clothing.\n2. Carry a copy of your ID and keep it safe.\n3. Avoid carrying large bags or items.\n4. Follow the instructions of the temple authorities and security personnel.\n5. Avoid visiting during peak hours to avoid crowds.");
@@ -164,11 +162,13 @@ function toggleMusic() {
     audio.play();
     isPlaying = true;
   }
+  
 }
 function displaySevas() {
   var sevasContent = document.getElementById('sevas-content');
-  sevasContent.innerHTML = '<ul>' +
+  sevasContent.innerHTML = '<ol type="1">' +
     '<li>Suprabhatham</li>' +
+    '<li>Abhisekam</li>'+
     '<li>Thomala Seva</li>' +
     '<li>Archana</li>' +
     '<li>Kalyanotsavam</li>' +
@@ -176,11 +176,10 @@ function displaySevas() {
     '<li>Vasanthotsavam</li>' +
     '<li>Sahasra Deepalankara Seva</li>' +
     '<li>Ekantha Seva</li>' +
-    '</ul>';
+    '</ol>';
 }
 	</script>
 <footer>TIRUMALA YATHRA GUIDE</footer>
-<marquee>S&L</marquee>
- 
+<marquee>Done By Shashank</marquee>
 </body>
 </html>
